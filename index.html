@@ -4,38 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel = "stylesheet" href = "index.css"></link>
     <script
     src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
+
+    <script>
+        var Forcustom = function(){
+            $('.custom_input').append("<input id = 'custom_input' type='number'  placeholder= 'Enter the Tips ($)'>");
+        };
+    </script>
+
     <title>Equal Calculator</title>
 </head>
 <body>
     <h1>Equal Calculator</h1>
 
+    <!-- first page -->
     <section class = "whoates">
         Who ates together?
     
         <br>
-        <div class = "input"><input id = 'label_1' type="text"  placeholder="Name"></div> 
-        
-        
+        <div class = "input">
+            <input id = 'label_1' type="text"  placeholder="Name">
+        </div> 
         
         <div class = 'set'>
             <button class = "add">Add friend</button>
-            <button class = "done">Next</button>
         </div>
         
-        <div class = 'friends'>friends List</div>
-    
+        <div class = 'friends'>Friends List</div>
+        <button class = "done">Done</button>
     </section>
 
+    <!-- second page -->
+    <section class = 'asign'>
+        Enter the each eats
+        <br>
+        <div class = 'eats'>
+            <!-- <label id = 'eats_label'><strong>How much frn1 ates?</strong></label>
+            <input id = 'eats_input' typ`e="number"  placeholder="Price ($)">
+            <button id = "eats_btn">Next</button> -->
+        </div>
+        <button id = "eats_btn">Next</button>
+    </section>
+    <!-- third page -->
+    <section class = 'tax'>
+        Choose your State for Tax
+        <br>
+        <!-- radio button -->
+        <div class = 'radio_parents'>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value = 'CA' checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  CA
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value = 'else'>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Else : 10%
+                </label>
+              </div>
+        </div>
+
+        <button class = "tax_btn mt-3">Next</button>
+
+    </section>
+
+    <section class = 'tip'>
+        Choose your Tips
+        <br>
+        <!-- radio button -->
+        <div class = 'radio_parents'>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" value = '15' checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  15%
+                </label>
+              </div>
+            
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" value = '18'>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  18%
+                </label>
+              </div>
+            
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" value = '20'>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  20%
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" value = 'custom' onclick="Forcustom()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Custom
+                </label>
+            </div>
+
+        </div>
+        <div class = 'custom_input'></div>
+        <button class = "tip_btn mt-3">Next</button>       
+
+    </section>
+
+    <section class = 'result'>
+        <h2><strong>The amount Result</strong></h2>
+        <p class = 'total_price'></p>
+        <div class = 'result_show'>
+            <p class = 'result_1'> Minse has to pay : 30$ (30%)</p>
+        </div>
+
+    </section>
    
 
 
 
- 
+ <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src = "logic.js"></script>
+
 </body>
 </html>
