@@ -127,7 +127,7 @@ $('.tip_btn').click(function(){
     $('.total_price').text("Total Price : " + total + " $");
 
     for(let i = 0; i < label.length; i++){
-        $('.result_show').append(`<p class = 'result_money'> ${label[i]} has to pay : ${final_money[i]}$</p>`);
+        $('.result_show').append(`<p class = 'result_money'> ${label[i]} have to pay : ${final_money[i]}$</p>`);
 
         // $('.result_show').append(`<p class = 'result_money'> ${label[i]} has to pay : ${final_money[i]}$ (${(final_money[i]/total).toFixed(2)*100}%)</p>`);
     };
