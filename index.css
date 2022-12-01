@@ -135,6 +135,16 @@ input{
     padding-right: 3%;
 }
 
+.tax_desc{
+    margin-top: 5%;
+    color: #ffff;
+    /* opacity: 60%; */
+    font-size: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
 .tip_btn{
     color: #ffff;
     background-color: #412AB7;
