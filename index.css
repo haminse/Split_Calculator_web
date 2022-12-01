@@ -41,8 +41,8 @@ input::-webkit-inner-spin-button {
 
 input{
     /* margin: auto; */
-    margin-left: 20%;
-    margin-right: 20%;
+    /* margin-left: 20%; */
+    /* margin-right: 20%; */
     border: solid #412AB7;
     /* background-color: #412AB7; */
     opacity: 80%;
