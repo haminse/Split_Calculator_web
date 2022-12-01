@@ -1,12 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     text-align: center;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'ImcreSoojin';
+    font-size: 200%;
+    color: #412AB7;
+    background-color: #44DCC5;
     
 }
 
+h1{
+    text-align: left;
+    margin-left:2%;
+    margin-top:2%;
+    margin-bottom:5%;
+    font-size: 70%;
+    color: #ffff;
 
-/*input div*/
-.input{
-    border : solid blue 0.01em;
+}
+
+
+head{
+    text-align: left;
 }
 
 
@@ -19,7 +41,9 @@ input::-webkit-inner-spin-button {
 
 input{
     margin: auto;
-    border: solid;
+    border: solid #412AB7;
+    /* background-color: #412AB7; */
+    opacity: 80%;
     /* float: middle; */
     
 }
@@ -27,39 +51,94 @@ input{
 
 
 .set{
-    border : solid blue 0.01em;
+    /* border : solid blue 0.01em; */
     margin-top: 2%;
     margin-bottom: 5%;
 
 }
 
+.add{
+    color: #ffff;
+    background-color: #412AB7;
+    border: solid #ffff;
+    border-radius: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
 
 .friends{
     /* will change */
-    color : orange;
+    color : #412AB7;
+    background-color: #ffff;
+    opacity: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+
     font-size: 150%;
-    border : solid blue 0.01em;
+    border : solid #412AB7;
     margin-bottom: 5%;
+    border-radius: 40px;
 
 }
 
 /* will reveal when enter add friend btn */
 .frn_list{
 
-    background-color: aqua;
+    background-color: #412AB7;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 4%;
     margin-bottom: 4%;
-    color : red;
+    color : #ffff;
+    border-radius: 40px;
+    padding-left: 2%;
+    padding-right: 2%; 
 
-    border : solid black 0.1em;
+
+    border : solid #ffff;
     
 }
 
+.done{
+    color: #ffff;
+    background-color: #412AB7;
+    border: solid #ffff;
+    border-radius: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 5%;
+}
 
 .eats_input{
     margin-top: 5%;
+}
+
+#eats_btn{
+    color: #ffff;
+    background-color: #412AB7;
+    border: solid #ffff;
+    border-radius: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.tax_btn{
+    color: #ffff;
+    background-color: #412AB7;
+    border: solid #ffff;
+    border-radius: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.tip_btn{
+    color: #ffff;
+    background-color: #412AB7;
+    border: solid #ffff;
+    border-radius: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 /* change with display none later! */
@@ -101,6 +180,31 @@ input{
 
 
 /* reveal later */
-/* .result{
+.result{
     display: none;
-} */
+}
+
+.result_show{
+    color : #412AB7;
+    background-color: #ffff;
+    opacity: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    font-size: 150%;
+    border : solid #412AB7;
+    margin-bottom: 5%;
+    border-radius: 40px;
+}
+
+.result_money{
+    background-color: #412AB7;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color : #ffff;
+    border-radius: 40px;
+    padding-left: 2%;
+    padding-right: 2%; 
+}

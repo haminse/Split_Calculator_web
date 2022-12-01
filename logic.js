@@ -65,7 +65,7 @@ $('#eats_btn').click(function(){
 //when click tax_btn, set radio_val value and del the section
 $('.tax_btn').click(function(){
     var radio_val_tax = $('input[name = "flexRadioDefault"]:checked').val();
-    alert(radio_val_tax); //del
+    // alert(radio_val_tax); //del
     $('.tax').css('display', 'none');
     $('.tip').css('display', 'block');
 
@@ -89,7 +89,7 @@ $('.tip_btn').click(function(){
 
     // append the number input html here
     var radio_val_tip = $('input[name = "flexRadioDefault2"]:checked').val();
-    alert(radio_val_tip); //del
+    // alert(radio_val_tip); //del
     $('.tip').css('display', 'none');
     $('.result').css('display', 'block');
 
@@ -114,11 +114,11 @@ $('.tip_btn').click(function(){
             break;
 
         }
-    alert(label); 
-    alert(money); 
-    alert(summ);
-    alert(tax); 
-    alert(tip); 
+    // alert(label); 
+    // alert(money); 
+    // alert(summ);
+    // alert(tax); 
+    // alert(tip); 
     
     //calculate
     var total = (summ * (1 + tax *0.01) * (1 + tip * 0.01)).toFixed(2);
@@ -127,7 +127,9 @@ $('.tip_btn').click(function(){
     $('.total_price').text("Total Price : " + total + " $");
 
     for(let i = 0; i < label.length; i++){
-        $('.result_show').append(`<p class = 'result_money'> ${label[i]} has to pay : ${final_money[i]}$ (${(final_money[i]/total).toFixed(2)*100}%)</p>`);
+        $('.result_show').append(`<p class = 'result_money'> ${label[i]} has to pay : ${final_money[i]}$</p>`);
+
+        // $('.result_show').append(`<p class = 'result_money'> ${label[i]} has to pay : ${final_money[i]}$ (${(final_money[i]/total).toFixed(2)*100}%)</p>`);
     };
     
 });
