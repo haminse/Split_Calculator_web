@@ -31,6 +31,10 @@ head{
     text-align: left;
 }
 
+#label_1{
+    border-radius: 40px;
+    padding-left: 3%;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -66,6 +70,7 @@ input{
     border-radius: 40px;
     padding-left: 2%;
     padding-right: 2%;
+    margin-bottom: 4%;
 
 }
 
@@ -78,7 +83,7 @@ input{
     margin-right: 20%;
     padding-left: 2%;
     padding-right: 2%; 
-    font-size: 150%;
+    font-size: 100%;
     border : solid #412AB7;
     margin-bottom: 5%;
     border-radius: 40px;

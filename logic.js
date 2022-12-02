@@ -39,7 +39,7 @@ $('.done').click(function(){
     for(let i = 0; i < label.length; i++){
 
         $('.eats').append(`<div class = 'eats_${i}'>
-        <label id = 'eats_label_${i}'><strong>How much ${label[i]} ates?</strong></label>
+        <label id = 'eats_label_${i}'><strong>How much ${label[i]} ate?</strong></label>
         <input id = 'eats_input_${i}' type="number"  placeholder="Price ($)">
         </div>`);
         $(`.eats_${i}`).css('margin-bottom', '3%');
