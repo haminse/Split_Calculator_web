@@ -39,7 +39,7 @@ $('.done').click(function(){
     for(let i = 0; i < label.length; i++){
 
         $('.eats').append(`<div class = 'eats_${i}'>
-        <label id = 'eats_label_${i}'><strong>How much ${label[i]} ate?</strong></label>
+        <label id = 'eats_label_${i}'><strong>How much did ${label[i]} eat?</strong></label>
         <input id = 'eats_input_${i}' type="number"  placeholder="Price ($)">
         </div>`);
         $(`.eats_${i}`).css('margin-bottom', '3%');
@@ -124,10 +124,10 @@ $('.tip_btn').click(function(){
     var total = (summ * (1 + tax *0.01) * (1 + tip * 0.01)).toFixed(2);
     var final_money = money.map((x) => {return (x / summ *total).toFixed(2)});
 
-    $('.total_price').text("Total Price : " + total + " $");
+    $('.total_price').text("Total Price : $" + total);
 
     for(let i = 0; i < label.length; i++){
-        $('.result_show').append(`<p class = 'result_money'> ${label[i]} have to pay : ${final_money[i]}$</p>`);
+        $('.result_show').append(`<p class = 'result_money'> ${label[i]} have to pay : $${final_money[i]}</p>`);
 
         // $('.result_show').append(`<p class = 'result_money'> ${label[i]} has to pay : ${final_money[i]}$ (${(final_money[i]/total).toFixed(2)*100}%)</p>`);
     };

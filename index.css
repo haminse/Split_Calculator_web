@@ -11,7 +11,7 @@ body{
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'ImcreSoojin';
     font-size: 200%;
-    color: #412AB7;
+    color: #2954e0;
     background-color: #44DCC5;
     
 }
@@ -47,7 +47,7 @@ input{
     /* margin: auto; */
     /* margin-left: 20%; */
     /* margin-right: 20%; */
-    border: solid #412AB7;
+    border: solid #587EF9;
     /* background-color: #412AB7; */
     opacity: 80%;
     /* float: middle; */
@@ -65,7 +65,7 @@ input{
 
 .add{
     color: #ffff;
-    background-color: #412AB7;
+    background-color: #587EF9;
     border: solid #ffff;
     border-radius: 40px;
     padding-left: 2%;
@@ -76,7 +76,7 @@ input{
 
 .friends{
     /* will change */
-    color : #412AB7;
+    color : #587EF9;
     background-color: #ffff;
     opacity: 80%;
     margin-left: 20%;
@@ -84,7 +84,7 @@ input{
     padding-left: 2%;
     padding-right: 2%; 
     font-size: 100%;
-    border : solid #412AB7;
+    border : solid #587EF9;
     margin-bottom: 5%;
     border-radius: 40px;
 
@@ -93,7 +93,7 @@ input{
 /* will reveal when enter add friend btn */
 .frn_list{
 
-    background-color: #412AB7;
+    background-color: #587EF9;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 4%;
@@ -110,7 +110,7 @@ input{
 
 .done{
     color: #ffff;
-    background-color: #412AB7;
+    background-color: #587EF9;
     border: solid #ffff;
     border-radius: 40px;
     padding-left: 3%;
@@ -124,7 +124,7 @@ input{
 
 #eats_btn{
     color: #ffff;
-    background-color: #412AB7;
+    background-color: #587EF9;
     border: solid #ffff;
     border-radius: 40px;
     padding-left: 3%;
@@ -133,7 +133,7 @@ input{
 
 .tax_btn{
     color: #ffff;
-    background-color: #412AB7;
+    background-color: #587EF9;
     border: solid #ffff;
     border-radius: 40px;
     padding-left: 3%;
@@ -152,11 +152,19 @@ input{
 
 .tip_btn{
     color: #ffff;
-    background-color: #412AB7;
+    background-color: #587EF9;
     border: solid #ffff;
     border-radius: 40px;
     padding-left: 3%;
     padding-right: 3%;
+}
+
+#custom_input{
+    border-radius: 40px;
+    border: solid #587EF9; 
+    opacity: 80%;
+    margin-top: 2%;
+    padding-left : 2%;
 }
 
 /* change with display none later! */
@@ -203,20 +211,20 @@ input{
 }
 
 .result_show{
-    color : #412AB7;
+    color : #587EF9;
     background-color: #ffff;
     opacity: 80%;
     margin-left: 20%;
     margin-right: 20%;
 
     font-size: 150%;
-    border : solid #412AB7;
+    border : solid #587EF9;
     margin-bottom: 5%;
     border-radius: 40px;
 }
 
 .result_money{
-    background-color: #412AB7;
+    background-color: #587EF9;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 4%;
